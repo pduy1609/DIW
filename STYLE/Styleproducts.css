@@ -1,0 +1,118 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: font1;
+	src:url("../Fonts/Montserrat-Bold.ttf");
+}
+@font-face{
+	font-family: font2;
+	src:url("../Fonts/Montserrat-Regular.ttf");
+}
+
+.bannerpro{
+	background-image: url("../IMAGES/category_cabinet.jpg");
+	height:80vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.bannerpro .vien{
+	background-color:black;
+	width:1.5px;
+	height:250px;
+	position: absolute;
+	top:28vh;
+	left:10%;
+}
+.bannerpro h1{
+	position:absolute;
+	top:60vh;
+	left:10%;
+	color:black;
+	font-family: font1;
+}
+.bannerpro span{
+	text-decoration: underline;
+}
+@keyframes fade-in-bck{0%{transform:translateZ(80px);opacity:0}100%{transform:translateZ(0);opacity:1}}
+.bannerpro{animation:fade-in-bck 2s cubic-bezier(.39,.575,.565,1.000) both}
+@keyframes slide-in-top{0%{transform:translateY(-1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
+.bannerpro .vien{animation:slide-in-top 2s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes slide-in-right{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+.bannerpro h1{animation:slide-in-right 2s cubic-bezier(.25,.46,.45,.94) 1s both}
+
+.products h4{
+	font-family: font1;
+}
+.contact{
+	height:50vh;
+	position: relative;
+
+}
+.contact a{
+	text-decoration: none;
+	color:dimgrey;
+}
+.contact a:hover {
+	color:dimgrey;
+	text-decoration: none;
+}
+.contact hr{
+	border-top: 1px solid #0426A0;
+	width:65%;
+	position: absolute;
+	left:20%
+}
+.contact .grid1{
+	padding-left: 20%;
+}
+.contact p{
+	font-family: font2;
+}
+.contact h3{
+	font-family:font1
+}
+.footer{
+	background-color:#0426A0;
+	display: flex;
+	justify-content: space-around;
+	color:white;
+	padding-top:10px;
+}
+.footer p{
+	font-family:font2;
+}
+@media screen and (max-width:415px){
+	.bannerpro h1{
+		font-size:30px;
+		padding-right:500px;
+		line-height: 30px;
+		top:63vh;
+	}
+	.bannerpro .vien{
+		height: 100px;
+		top:49vh;
+	}
+	.products h4{
+		font-size:20px!important;
+	}
+	.contact{
+		height: 70vh;
+	}
+	.contact p{
+		font-size:13px;
+	}
+	.contact h3{
+		font-size:20px;
+	}
+	.contact .grid1{
+		padding-left:5%!important;
+	}
+
+	.footer p{
+		font-size:13px;
+	}
+}
